@@ -1,0 +1,1 @@
+webpackJsonp([0,1],[function(e,o,n){"use strict";var t=n(1);n.n(t);console.log("Style applied"),document.getElementById("root").innerHTML="Из файла style.js"},function(e,o){},function(e,o,n){"use strict";Object.defineProperty(o,"__esModule",{value:!0});n(0);console.log("Hello World")}],[2]);

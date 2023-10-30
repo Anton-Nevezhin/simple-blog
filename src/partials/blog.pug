@@ -1,0 +1,12 @@
+include ./blogcard.pug
+include ./records.pug
+
+.blog
+    .blog-content
+        .blogCard
+            each item in records
+                +blogCard(item.title, item.text, item.author, item.image)
+
+    p
+        != 'Из файла blog.pug'
+

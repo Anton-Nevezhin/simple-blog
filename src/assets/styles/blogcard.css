@@ -1,0 +1,58 @@
+body {
+  margin: 0 auto;
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  max-width: 1152px;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 856px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+.text-big {
+  margin-top: 167px;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.text-page {
+  font-size: 26px;
+  font-weight: 700;
+  color: #21243D;
+}
+.text-small {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: auto;
+  color: #21243D;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100vw;
+  }
+  .wrapper {
+    max-width: 85.3vw;
+    margin: 0 0;
+  }
+}
+.blogcard {
+  margin-top: 31px;
+  height: 215px;
+  border-bottom-style: solid;
+  border-color: #E0E0E0;
+  border-width: 1px;
+  display: flex;
+}
+.image-small {
+  width: 246px;
+  height: 180px;
+}
+.blogcard-text {
+  width: 592px;
+  margin-left: 18px;
+}
+.text-blogcard {
+  margin-top: 0px;
+}
