@@ -6,7 +6,3 @@ include ./records.pug
         .blogCard
             each item in records
                 +blogCard(item.title, item.text, item.author, item.image)
-
-    p
-        != 'Из файла blog.pug'
-

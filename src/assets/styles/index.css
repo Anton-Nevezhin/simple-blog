@@ -1,17 +1,17 @@
 .header {
   max-width: 1152px;
-  height: 594px;
+  height: 444px;
   padding-top: 1px;
   margin-left: auto;
   margin-right: auto;
 }
 .header-menu {
-  max-width: 856px;
+  max-width: 1152px;
   height: 59px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 .menu-point {
   margin-top: 20px;
@@ -25,7 +25,7 @@
 }
 .header-content {
   max-width: 856px;
-  height: 534px;
+  height: 484px;
   padding-top: 1px;
   margin-left: auto;
   margin-right: auto;
@@ -36,6 +36,7 @@
   width: 500px;
 }
 .header-content-right {
+  padding-top: 1px;
   width: 400px;
 }
 .header-content-left {
@@ -54,8 +55,14 @@
 .header-image {
   width: 250px;
   height: 250px;
-  margin-left: 150px;
+  margin-left: 90px;
   margin-top: 150px;
+}
+.header-image-1 {
+  width: 250px;
+  height: 250px;
+  margin-top: 40px;
+  margin-left: 150px;
 }
 .pages {
   max-width: 1152px;
@@ -139,8 +146,52 @@
   margin-left: auto;
   margin-right: auto;
 }
-.text-page {
-  color: blue;
+.blogcard {
+  margin-top: 31px;
+  height: 215px;
+  border-bottom-style: solid;
+  border-color: #E0E0E0;
+  border-width: 1px;
+  display: flex;
+}
+.image-small {
+  width: 246px;
+  height: 180px;
+}
+.blogcard-text {
+  width: 592px;
+  margin-left: 18px;
+}
+.text-blogcard {
+  margin-top: 0px;
+}
+.footer {
+  max-width: 1152px;
+  height: 161px;
+  padding-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #EDF7FA;
+}
+.footer-content {
+  max-width: 150px;
+  height: 32px;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-image {
+  width: 32px;
+  height: 32px;
+}
+.copyright {
+  width: 200px;
+  text-align: center;
+  margin-top: 19px;
+  margin-left: auto;
+  margin-right: auto;
 }
 body {
   margin: 0 auto;
@@ -150,16 +201,13 @@ body {
 a {
   text-decoration: none;
 }
-.text-big {
-  font-size: 36px;
-}
 .wrapper {
   max-width: 856px;
   margin: 0 auto;
   background-color: aqua;
 }
 .text-big {
-  margin-top: 167px;
+  margin-top: 17px;
   font-size: 44px;
   font-weight: 700;
   line-height: 60px;
