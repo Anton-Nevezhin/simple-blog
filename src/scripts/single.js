@@ -28,7 +28,7 @@ for (let i = 0; i < records.length; i++) {
   // singleImage.src = '/simple-blog/dist/static/img/02.jpg'
   // let add = '01.png'
   // console.log('/simple-blog/dist/static/img/' + add)
-  singleImage.src = 'dist/static/img/01.83d35ee.png'
+  singleImage.src = 'simple-blog/dist/static/img/01.83d35ee.png'
   // singleImage.src = './post-1.png'
   blogcardText.appendChild(card)
   blogcardText.appendChild(singleText)
