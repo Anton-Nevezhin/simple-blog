@@ -25,7 +25,7 @@ for (let i = 0; i < records.length; i++) {
   let singleImage = document.createElement('img')
   singleImage.className = 'image-small'
   // singleImage.src = 'https://i.artfile.ru/s/1376277_130818_94_ArtFile_ru.jpg' // records[i].image
-  singleImage.src = '/simple-blog/dist/static/img/post-1.png'
+  singleImage.src = '/simple-blog/dist/static/img/02.jpg'
   // let add = '01.png'
   // console.log('/simple-blog/dist/static/img/' + add)
   // singleImage.src = '../assets/images/01.png'
