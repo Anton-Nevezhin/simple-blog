@@ -29,8 +29,14 @@ for (let i = 0; i < records.length; i++) {
   // singleImage.src = '/simple-blog/dist/static/img/02.jpg'
   // let add = '01.png'
   // console.log('/simple-blog/dist/static/img/' + add)
+<<<<<<< HEAD
   // singleImage.src = 'static/img/01.83d35ee.png'
   singleImage.src = 'src/assets/images/08.jpg'
+=======
+  singleImage.src = 'static/img/01.83d35ee.png'
+  // singleImage.src = 'simple-blog/src/assets/images/08.jpg'
+  // singleImage.src = '../images/08.jpg'
+>>>>>>> 87afb1995704c58c11b2d40eea5e327a53814b47
   // singleImage.src = './post-1.png'
   blogcardText.appendChild(card)
   blogcardText.appendChild(singleText)
