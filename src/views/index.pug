@@ -12,25 +12,25 @@ html
     include ../partials/blog.pug
     include ../partials/footer.pug
 
-    .root#root
+    //- .root#root
     
-    card(title, text, className, image)
+    //- card(title, text, className, image)
 
-    .wrapper
-      include ../partials/middle.pug
-      include ../partials/content.pug
-      .content content
+    //- .wrapper
+    //-   include ../partials/middle.pug
+    //-   include ../partials/content.pug
+    //-   .content content
 
-      include ../partials/card.pug
-      - const text = ' Etiam quam erat, molestie elementum elementum porta, tincidunt eget nunc. Ut arcu quam, feugiat vitae laoreet vel, consectetur eget lorem. Duis ultrices ullamcorper dignissim.';
-      - const cards = [
-      -  {title: 'Lorem ipsum dolor', text, image: '../assets/images/octocat.png'},
-      -  {title: 'sit amet, consectetur', text, image: '../assets/images/octocat.png'},
-      - {title: 'adipiscing elit.', text, image: '../assets/images/octocat.png'}]
+    //-   include ../partials/card.pug
+    //-   - const text = ' Etiam quam erat, molestie elementum elementum porta, tincidunt eget nunc. Ut arcu quam, feugiat vitae laoreet vel, consectetur eget lorem. Duis ultrices ullamcorper dignissim.';
+    //-   - const cards = [
+    //-   -  {title: 'Lorem ipsum dolor', text, image: '../assets/images/octocat.png'},
+    //-   -  {title: 'sit amet, consectetur', text, image: '../assets/images/octocat.png'},
+    //-   - {title: 'adipiscing elit.', text, image: '../assets/images/octocat.png'}]
 
-      .cards
-        each item in cards
-          +card(item.title, item.text, 'cards__item', item.image)
+    //-   .cards
+    //-     each item in cards
+    //-       +card(item.title, item.text, 'cards__item', item.image)
 
 
 
