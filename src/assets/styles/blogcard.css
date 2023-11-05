@@ -62,6 +62,26 @@ a {
   font-weight: 700;
   color: #21243D;
 }
+.text-blogcard-date {
+  margin-top: 20px;
+  font-style: italic;
+}
+.blogcard-footer {
+  display: flex;
+  justify-content: space-between;
+}
 .author {
   margin-top: 20px;
+  width: 260px;
+  font-weight: bold;
+}
+.blogcard-button {
+  margin-top: 20px;
+  width: 140px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 10px;
 }
