@@ -1,6 +1,6 @@
 import '../lib/style'
 
-import { rec } from '../lib/config'
+import { rec } from './config'
 console.log('Из config: ', rec)
 
 import { hello } from '../lib/style.js'
