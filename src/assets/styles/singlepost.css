@@ -17,6 +17,12 @@ a {
   font-weight: 700;
   line-height: 60px;
 }
+.text-middle {
+  margin-top: 17px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+}
 .text-page {
   font-size: 26px;
   font-weight: 700;
@@ -37,51 +43,25 @@ a {
     margin: 0 0;
   }
 }
-.blogcard {
-  margin-top: 31px;
-  height: 215px;
-  border-bottom-style: solid;
-  border-color: #E0E0E0;
-  border-width: 1px;
-  display: flex;
+.singlepost {
+  max-width: 856px;
+  height: auto;
+  padding-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.image-small {
-  width: 246px;
-  height: 180px;
-}
-.blogcard-text {
-  width: 592px;
-  margin-left: 18px;
-}
-.text-blogcard {
-  margin-top: 0px;
-}
-.text-blogcard-title {
-  margin-top: 0px;
-  font-size: 26px;
-  font-weight: 700;
-  color: #21243D;
-}
-.text-blogcard-date {
+.single-flex {
   margin-top: 20px;
-  font-style: italic;
-}
-.blogcard-footer {
   display: flex;
   justify-content: space-between;
 }
-.author {
+.single-text {
   margin-top: 20px;
-  width: 260px;
-  font-weight: bold;
 }
-.blogcard-button {
-  margin-top: 20px;
-  width: 140px;
-  height: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #eeeeee;
-  border: none;
-  border-radius: 10px;
+.single-image {
+  width: 246px;
+  height: 180px;
+  margin-top: 30px;
+  margin-right: 20px;
+  float: left;
 }
