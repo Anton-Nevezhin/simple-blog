@@ -1,3 +1,5 @@
+import '../lib/style'
+
 // Должно вывести этот текст
 console.log('Должно быть в консоли config')
 
