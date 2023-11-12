@@ -19,14 +19,17 @@ let recordsfirst = [
 // let mas1String = JSON.stringify(records)
 // localStorage.setItem('mas', mas1String)
 
+// let ms = localStorage.getItem('masarr')
+// console.log(ms)
+
 // Загрузка пустого localStorage
-let masString = localStorage.getItem('mas') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
+let masString = localStorage.getItem('masarray') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
 console.log('mass: ', masString)
 if (masString === null) {
   let masStringFirst = JSON.stringify(recordsfirst)
-  localStorage.setItem('mas', masStringFirst)
+  localStorage.setItem('masarray', masStringFirst)
 }
-masString = localStorage.getItem('mas') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
+masString = localStorage.getItem('masarray') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
 console.log('massnew: ', masString)
 
 records = JSON.parse(masString)

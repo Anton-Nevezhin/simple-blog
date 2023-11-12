@@ -14,7 +14,7 @@ import '../lib/style'
 
 // export let textSingle = 'Пример текста из single'
 
-let masString = localStorage.getItem('mas') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
+let masString = localStorage.getItem('masarray') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
 let records = JSON.parse(masString)
 
 // let sin = localStorage.getItem('mas')

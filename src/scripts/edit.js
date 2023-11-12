@@ -5,7 +5,7 @@ import '../lib/style'
 
 console.log(document.location.href)
 
-let masString = localStorage.getItem('mas')  // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
+let masString = localStorage.getItem('masarray')  // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
 let records = JSON.parse(masString)
 
 // Определяем номер записи (элемента массива)
@@ -62,7 +62,7 @@ singleButton.addEventListener('click', () => {
   // console.log('a: ', a)
   // localStorage.setItem('mas', a)
   masString = JSON.stringify(records)
-  localStorage.setItem('mas', masString)
+  localStorage.setItem('masarray', masString)
   let a
   a = 'single.html?n=' + n
   document.location.assign(a)
