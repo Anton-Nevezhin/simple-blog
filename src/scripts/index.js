@@ -21,13 +21,13 @@ let recordsfirst = [
 
 // Загрузка пустого localStorage
 let masString = localStorage.getItem('mass') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
-// console.log('mass: ', masString)
+console.log('mass: ', masString)
 if (masString === null) {
   let masStringFirst = JSON.stringify(recordsfirst)
   localStorage.setItem('mass', masStringFirst)
 }
 masString = localStorage.getItem('mass') // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
-// console.log('massnew: ', masString)
+console.log('massnew: ', masString)
 
 records = JSON.parse(masString)
 
