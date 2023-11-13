@@ -80,7 +80,7 @@ let editreplace = document.getElementById('editreplace')
 
 // document.getElementById('editimage').src = 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-4.jpg'
 editreplace.addEventListener('click', () => {
-  document.getElementById('img').innerHTML = document.getElementById('editlist').value
+  // document.getElementById('img').innerHTML = document.getElementById('editlist').value
   document.getElementById('editimage').src = document.getElementById('editlist').value
   // // let a
   // // a = 'config.html'
