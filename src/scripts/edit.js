@@ -3,6 +3,8 @@ import '../lib/style'
 // let editmas = localStorage.getItem('mas')
 // console.log('mas in edit: ', editmas)
 
+var imagesList = [{title: 'image-1', value: 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-1.jpg'}, {title: 'image-2', value: 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-2.jpg'}, {title: 'image-3', value: 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-3.jpg'}, {title: 'image-4', value: 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-4.jpg'}]
+
 console.log(document.location.href)
 
 let masString = localStorage.getItem('masarray')  // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
@@ -21,11 +23,13 @@ console.log(n)
 let title = document.getElementById('edittitle')
 let text = document.getElementById('edittextarea')
 let author = document.getElementById('editauthor')
+let image = document.getElementById('editimage')
 
 // if (n < records.length) { // Для добавления записи
 title.value = records[n].title
 text.value = records[n].text
 author.value = records[n].author
+image.src = imagesList[n].value
 // }
 
 // const records = [
@@ -59,6 +63,7 @@ singleButton.addEventListener('click', () => {
   records[n].title = title.value
   records[n].text = text.value
   records[n].author = author.value
+  records[n].image = document.getElementById('editlist').value
   // console.log('a: ', a)
   // localStorage.setItem('mas', a)
   masString = JSON.stringify(records)
@@ -66,4 +71,28 @@ singleButton.addEventListener('click', () => {
   let a
   a = 'single.html?n=' + n
   document.location.assign(a)
+})
+// document.getElementById('img').innerHTML = document.getElementById('editlist').value
+
+// document.getElementById('str').innerHTML = document.getElementById('editlist').value.slice(61, 71)
+
+let editreplace = document.getElementById('editreplace')
+
+// document.getElementById('editimage').src = 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-4.jpg'
+editreplace.addEventListener('click', () => {
+  document.getElementById('img').innerHTML = document.getElementById('editlist').value
+  document.getElementById('editimage').src = document.getElementById('editlist').value
+  // // let a
+  // // a = 'config.html'
+  // // document.location.assign(a)
+  // records[n].title = title.value
+  // records[n].text = text.value
+  // records[n].author = author.value
+  // // console.log('a: ', a)
+  // // localStorage.setItem('mas', a)
+  // masString = JSON.stringify(records)
+  // localStorage.setItem('masarray', masString)
+  // let a
+  // a = 'single.html?n=' + n
+  // document.location.assign(a)
 })

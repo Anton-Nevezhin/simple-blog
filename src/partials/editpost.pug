@@ -4,5 +4,18 @@
     p Текст:
     textarea.edit-textarea.text-small(name="", id='edittextarea')
     p Автор:
-    input.edit-author.text-small(type="text" id='editauthor')
+    input.edit-author.text-small.block(type="text" id='editauthor')
+    p Картинка:
+    img.edit-image.block#editimage(src=image)
+    .edit-footer-image
+    - var imagesList = [{title: 'image-1', value: 'static/img/post-1.jpg'}, {title: 'image-2', value: 'static/img/post-2.jpg'}, {title: 'image-3', value: 'static/img/post-3.jpg'}, {title: 'image-4', value: 'static/img/post-4.jpg'}, {title: 'image-5', value: 'static/img/post-5.jpg'}, {title: 'image-6', value: 'static/img/post-6.jpg'}, {title: 'image-7', value: 'static/img/post-7.jpg'}, {title: 'image-8', value: 'static/img/post-8.jpg'}];
+    select#editlist.select(name='nationality')
+      each item in imagesList
+        - const {title, value} = item
+        option.select--list(value= value)= title
+    button.blogcard-button.block#editreplace Изменить картинку
+    p.block#img
+    p.block#str
+
+    
     button.blogcard-button.block#editbutton Сохранить
