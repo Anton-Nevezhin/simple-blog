@@ -99,3 +99,7 @@ a {
   margin-right: 20px;
   float: left;
 }
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
