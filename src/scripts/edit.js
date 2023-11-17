@@ -11,16 +11,18 @@ console.log(document.location.href)
 let masString = localStorage.getItem('masarray')  // ['Ариша', "Гриша", 'Пахан'] //  localStorage.getItem('mas')
 let records = JSON.parse(masString)
 
-console.log(records)
+// console.log(records)
 
 let now = new Date()
+// console.log(now)
 let month = Number(now.getMonth()) + Number(1)
 let date = now.getDate() + '.' + month + '.' + now.getFullYear() + '  ' + now.getHours() + ':' + now.getMinutes()
+// console.log(date)
 
 // Определяем номер записи (элемента массива)
 let n = location.search
 n = n.substr(3)
-console.log(n)
+// console.log(n)
 // if (n < 0) {
 //   n = records.length
 // }
@@ -28,6 +30,7 @@ console.log(n)
 // if (n === 'n') {
 //   n = records.length
 // }
+// console.log(n)
 
 let title = document.getElementById('edittitle')
 let text = document.getElementById('edittextarea')
@@ -107,26 +110,28 @@ singleButton.addEventListener('click', () => {
 
 // document.getElementById('str').innerHTML = document.getElementById('editlist').value.slice(61, 71)
 
-let editreplace = document.getElementById('editreplace')
+// let editreplace = document.getElementById('editreplace')
 
-// document.getElementById('editimage').src = 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-4.jpg'
-editreplace.addEventListener('click', () => {
-  // document.getElementById('img').innerHTML = document.getElementById('editlist').value
-  document.getElementById('editimage').src = document.getElementById('editlist').value
-  // // let a
-  // // a = 'config.html'
-  // // document.location.assign(a)
-  // records[n].title = title.value
-  // records[n].text = text.value
-  // records[n].author = author.value
-  // // console.log('a: ', a)
-  // // localStorage.setItem('mas', a)
-  // masString = JSON.stringify(records)
-  // localStorage.setItem('masarray', masString)
-  // let a
-  // a = 'single.html?n=' + n
-  // document.location.assign(a)
-})
+// // document.getElementById('editimage').src = 'https://anton-nevezhin.github.io/simple-blog/dist/static/img/post-4.jpg'
+// editreplace.addEventListener('click', () => {
+//   // document.getElementById('img').innerHTML = document.getElementById('editlist').value
+//   document.getElementById('editimage').src = document.getElementById('editlist').value
+//   // // let a
+//   // // a = 'config.html'
+//   // // document.location.assign(a)
+//   // records[n].title = title.value
+//   // records[n].text = text.value
+//   // records[n].author = author.value
+//   // // console.log('a: ', a)
+//   // // localStorage.setItem('mas', a)
+//   // masString = JSON.stringify(records)
+//   // localStorage.setItem('masarray', masString)
+//   // let a
+//   // a = 'single.html?n=' + n
+//   // document.location.assign(a)
+// })
+
+// console.log('arrghjtyueryt')
 
 let editlist = document.getElementById('editlist')
 
@@ -134,11 +139,17 @@ editlist.addEventListener('change', () => {
   document.getElementById('editimage').src = editlist.value
 })
 
+// let arr = [0, 1, 2, 3, 4, 5, 6]
+// console.log('arr: ', arr)
+// console.log('arrghjtyueryt')
+
 let deleteButton = document.getElementById('deletebutton')
 deleteButton.addEventListener('click', () => {
   records.splice(n, 1)
+  // arr.splice(3, 2)
+  // console.log('arr: ', arr)
   document.location.assign('index.html')
-  // console.log('rec: ', records)
+  console.log('rec: ', records)
   masString = JSON.stringify(records)
   localStorage.setItem('masarray', masString)
 })
