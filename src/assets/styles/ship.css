@@ -1,0 +1,18 @@
+.ship {
+  max-width: 1152px;
+  height: auto;
+  padding-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ship-content {
+  max-width: 856px;
+  height: auto;
+  margin-top: 69px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  border-bottom-style: solid;
+  border-color: #E0E0E0;
+  border-width: 1px;
+}

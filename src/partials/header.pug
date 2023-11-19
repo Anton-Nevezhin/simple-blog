@@ -1,12 +1,15 @@
 .header
     .header-menu
         a.menu-point(href="index.html") Главная
+        a.menu-point(href="ship.html") По воде
+        a.menu-point(href="auto.html") По суше
         a.menu-point(href="edit.html?n=n") Добавить запись
-        a.menu-point(href="#") Контакты
+        a.menu-point(href="connection.html") Контакты
     .header-content
         .header-content-left 
             .text-big Путешествуем по всему миру
             .header-text-small.text-small Путешествия – это именно то, где можно получить море эмоций, открыть для себя новые места и найти новые впечатления. Именно за это мы их так любим.
-            button.header-button Напишите нам
+            a(href='connection.html')
+                button.header-button Напишите нам
         .header-content-right
             img.header-image-1(src='../assets/images/01.png', alt='Земной шар')

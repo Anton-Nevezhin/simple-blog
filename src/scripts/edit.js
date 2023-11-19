@@ -14,10 +14,16 @@ let records = JSON.parse(masString)
 // console.log(records)
 
 let now = new Date()
-// console.log(now)
+console.log('min', now.getMinutes())
+let min = now.getMinutes()   // now.getMinutes()
+if (min < 10) {
+  min = '0' + min
+}
+console.log('min', min)
 let month = Number(now.getMonth()) + Number(1)
-let date = now.getDate() + '.' + month + '.' + now.getFullYear() + '  ' + now.getHours() + ':' + now.getMinutes()
+let date = now.getDate() + '.' + month + '.' + now.getFullYear() + '  ' + now.getHours() + ':' + min
 // console.log(date)
+console.log('date', date)
 
 // Определяем номер записи (элемента массива)
 let n = location.search
@@ -30,7 +36,7 @@ n = n.substr(3)
 // if (n === 'n') {
 //   n = records.length
 // }
-// console.log(n)
+console.log(n)
 
 let title = document.getElementById('edittitle')
 let text = document.getElementById('edittextarea')
@@ -46,6 +52,7 @@ if (n !== 'n') { // Для изменения записи
 // image.src = imagesList[n].value +++
 
   image.src = records[n].image
+  console.log(image.src)
 }
 
 // const records = [
@@ -76,36 +83,40 @@ singleButton.addEventListener('click', () => {
   // let a
   // a = 'config.html'
   // document.location.assign(a)
+  if (title.value !== '' && text.value !== '' && author.value !== '') {
+    if (n !== 'n') {
+      records[n].title = title.value
+      records[n].text = text.value
+      records[n].author = author.value
+      records[n].image = document.getElementById('editlist').value
+      console.log('Заменили')
+    }
 
-  if (n !== 'n') {
-    records[n].title = title.value
-    records[n].text = text.value
-    records[n].author = author.value
-    records[n].image = document.getElementById('editlist').value
-    console.log('Заменили')
-  }
-
-  if (n === 'n') {
-    let newrecord = {
-      title: title.value,
-      text: text.value,
-      author: author.value,
-      date: date,
-      image: document.getElementById('editlist').value}
+    if (n === 'n') {
+      let newrecord = {
+        title: title.value,
+        text: text.value,
+        author: author.value,
+        date: date,
+        image: document.getElementById('editlist').value}
     // n = length.records
-    records.push(newrecord)
-    console.log('author.value', records)
-    console.log('author.value')
-    console.log(newrecord)
-  }
+      records.push(newrecord)
+      console.log('author.value', records)
+      console.log('author.value')
+      console.log(newrecord)
+    }
   // console.log('a: ', a)
   // localStorage.setItem('mas', a)
-  masString = JSON.stringify(records)
-  localStorage.setItem('masarray', masString)
-  let a
-  a = 'index.html'
-  document.location.assign(a)
+    masString = JSON.stringify(records)
+    localStorage.setItem('masarray', masString)
+    let a
+    a = 'index.html'
+    document.location.assign(a)
+  } else {
+    alert('Пожалуйста, заполните все поля!')
+  }
 })
+
 // document.getElementById('img').innerHTML = document.getElementById('editlist').value
 
 // document.getElementById('str').innerHTML = document.getElementById('editlist').value.slice(61, 71)
@@ -145,11 +156,13 @@ editlist.addEventListener('change', () => {
 
 let deleteButton = document.getElementById('deletebutton')
 deleteButton.addEventListener('click', () => {
-  records.splice(n, 1)
+  if (n !== 'n') {
+    records.splice(n, 1)
   // arr.splice(3, 2)
   // console.log('arr: ', arr)
-  document.location.assign('index.html')
-  console.log('rec: ', records)
-  masString = JSON.stringify(records)
-  localStorage.setItem('masarray', masString)
+    document.location.assign('index.html')
+    console.log('rec: ', records)
+    masString = JSON.stringify(records)
+    localStorage.setItem('masarray', masString)
+  }
 })

@@ -17,6 +17,12 @@ a {
   font-weight: 700;
   line-height: 60px;
 }
+.text-middle {
+  margin-top: 17px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+}
 .text-page {
   font-size: 26px;
   font-weight: 700;
@@ -27,6 +33,34 @@ a {
   font-weight: 400;
   line-height: auto;
   color: #21243D;
+}
+.list-button {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #87ceeb;
+  border: none;
+  border-radius: 50%;
+}
+.list-button:hover {
+  cursor: pointer;
+}
+.pagination-button {
+  margin-top: 20px;
+  width: 100px;
+  height: 22px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #87ceeb;
+  border: none;
+  border-radius: 11px;
+}
+.pagination-button:hover {
+  cursor: pointer;
 }
 @media only screen and (max-width: 375px) {
   body {
@@ -90,6 +124,7 @@ a {
   font-weight: 500;
   color: white;
   border: 0px;
+  cursor: pointer;
 }
 .header-image {
   width: 250px;
