@@ -49,6 +49,21 @@ a {
 .list-button:hover {
   cursor: pointer;
 }
+.list-button-active {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #FF6464;
+  border: none;
+  border-radius: 50%;
+}
+.list-button-active:hover {
+  cursor: pointer;
+}
 .pagination-button {
   margin-top: 20px;
   width: 100px;

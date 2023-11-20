@@ -8,13 +8,11 @@
     p.bold Картинка:
     .image-content
       img.edit-image.block#editimage(src=image)
-      //- .edit-footer-image
       - var imagesList = [{title: 'Утёсы', value: 'static/img/post-1.jpg'}, {title: 'Озеро', value: 'static/img/post-2.jpg'}, {title: 'Луг', value: 'static/img/post-3.jpg'}, {title: 'Река', value: 'static/img/post-4.jpg'}, {title: 'Цветок', value: 'static/img/post-5.jpg'}, {title: 'Прибой', value: 'static/img/post-6.jpg'}, {title: 'Пальма', value: 'static/img/post-7.jpg'}, {title: 'Берег', value: 'static/img/post-8.jpg'}];
       select.image-select.text-small#editlist.select(name='nation')
         each item in imagesList
           - const {title, value} = item
           option.select--list(value= value)= title
-    //- button.blogcard-button.block#editreplace Изменить картинку
     p.block#img
     p.block#str
 
